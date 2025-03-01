@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>You're Invited!</h1>
+        <div class="event-details">
+            <h2>Grand Wedding Celebration</h2>
+            <h2>Event Details</h2>
+            <p><strong>Date:</strong> March 15, 2025</p>
+            <p><strong>Time:</strong> 6:00 PM - 11:00 PM</p>
+            <p><strong>Location:</strong> Rosewood Banquet Hall, New York</p>
+        </div>
+
+        <h2>RSVP</h2>
+        <form class="rsvp-form" action="submit_rsvp.php" method="POST">
+            <label for="Name">Name:</label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <br>
+            <label for="Email">Email:</label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <br>
+            <select name="attendance" required>
+                <label for="Name">Name:</label>
+                <option value="">Will you attend?</option>
+                <label for="Email">Email:</label>
+                <option value="yes">Yes, I'll be there!</option>
+                <option value="no">Sorry, I can't make it</option>
+            </select>
+            <br>
+            <button type="submit">Submit RSVP</button>
+        </form>
+    </div>
+</body>
+</html>
